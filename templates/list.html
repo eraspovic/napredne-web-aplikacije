@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block content %}
+ <!-- List Section -->
+ <section id="contact">
+        <div class="container">
+          <h2 class="text-center text-uppercase text-secondary mb-0">Selection list</h2>
+          <hr class="star-dark mb-5">
+          <div class="row">
+            <ul>
+              {% for entry in entries %}
+              <li>
+                {{ entry.id }} ~ {{ entry.firstName }} {{ entry.lastName }} - {{ entry.firstChoice }}, {{ entry.scndChoice }}, {{ entry.thirdChoice }} - <a href="/edit?id={{ entry.id }}">Edit data</a> - <a href="/delete?id={{ entry.id }}">Delete data</a>
+              </li>
+              {% else %}
+              <li>
+                We don't have any information about users choice..
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+  {% endblock %}

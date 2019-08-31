@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <!-- Choosing Section -->
+    <section class="bg-primary text-white mb-0" id="about">
+        <div class="container">
+            <h2 class="text-center text-uppercase text-white">Update info</h2>
+            <br>
+            <br>
+            <div class="row">
+            <div class="col-lg-4 ml-auto">
+                <p class="lead">
+                <form action="/update" method="get">
+                Id: <input type="text" name="id" value="{{ travelInfo[0] }}">
+                <br>
+                First name: <input type="text" name="firstName" value="{{ travelInfo[1] }}">
+                <br>
+                Last name: <input type="text" name="lastName" value="{{ travelInfo[2] }}">
+                <br>
+                #1 destination: <input type="text" name="firstChoice" value="{{ travelInfo[3] }}">
+                <br>
+                #2 destination: <input type="text" name="scndChoice" value="{{ travelInfo[4] }}">
+                <br>
+                #3 destination: <input type="text" name="thirdChoice" value="{{ travelInfo[5] }}">
+                <input type="submit" value="Submit"/>
+                </form>
+                </p>
+            </div>
+            <div class="col-lg-4 mr-auto">
+                <p class="lead">You can write some of your best travel destination.</p>
+            </div>
+            </div>
+
+
+        </div>
+    </section>
+
+{% endblock %}
