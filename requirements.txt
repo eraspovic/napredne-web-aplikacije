@@ -5,6 +5,6 @@ Flask-Bootstrap==3.3.7.1
 Jinja==1.2
 Jinja2==2.10
 MarkupSafe==1.1.0
-Werkzeug==0.14.1
+Werkzeug==0.15.3
 itsdangerous==1.1.0
 virtualenv==16.3.0
