@@ -3,7 +3,7 @@ Flask==1.0.2
 Flask-Babel==0.12.2
 Flask-Bootstrap==3.3.7.1
 Jinja==1.2
-Jinja2==2.10
+Jinja2==2.11.3
 MarkupSafe==1.1.0
 Werkzeug==0.14.1
 itsdangerous==1.1.0
